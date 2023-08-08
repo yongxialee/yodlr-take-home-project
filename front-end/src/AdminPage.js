@@ -24,23 +24,20 @@ function AdminPage(){
     return (
         <div>
         <h1>User list:</h1>
-        
+        <ul class="list-group">
             {users?.map(user=>(
+                <li>
                 <UserPage firstName={user.firstName}
                     lastname={user.lastName} 
                     email={user.email}
                     state={user.state}
                 />
+                </li>
                
              
                 
             ))}
-            {/* {Array.isArray(users)
-        ? users.map(element => {
-            return <li>{element.firstName}</li>;
-          })
-        : null} */}
-        
+            </ul>
             
         </div>
     )
