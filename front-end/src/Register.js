@@ -23,7 +23,7 @@ function Register(){
             firstName:formData.firstName,
             lastName:formData.lastName,
             email:formData.email,
-            state:formData.state
+            // state:formData.state
 
         };
         
@@ -105,7 +105,7 @@ return (
             </div>
             </div>
 
-           <div class="row">
+           {/* <div class="row">
            <div class="col-12">
                 <label>State: </label>
                 <select name="state" id="state" className="select form-control-lg" onChange={handleChange} 
@@ -115,7 +115,7 @@ return (
                 <option value="active">active</option>
                 </select>
                 </div>
-              </div>
+              </div> */}
               <div class="mt-4 pt-2">
             <button className="btn btn-primary btn-lg">Sign up</button>
             </div>        

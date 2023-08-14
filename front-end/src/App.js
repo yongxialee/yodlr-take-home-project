@@ -4,7 +4,7 @@ import { BrowserRouter as Router,Routes,Route } from "react-router-dom";
 import Register from "./Register";
 import Home from "./Home";
 import AdminPage from "./AdminPage";
-
+import User from "./User";
 // import UsersList from "./UsersList";
 
 
@@ -13,12 +13,10 @@ function App() {
     <div className="App">
     <Router>
     <Routes>
-      <Route exact path="/register" element={<Register />}>
-      
-
-      </Route>
+      <Route exact path="/register" element={<Register />}> </Route>
       <Route exact path="/" element={<Home />}></Route>
       <Route exact path="/adminPage" element={<AdminPage />}></Route>
+      <Route exact path="/users/:id" element={<User />}></Route>
      
       </Routes>
     </Router>

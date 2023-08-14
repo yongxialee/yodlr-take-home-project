@@ -1,6 +1,7 @@
 import React, {useEffect,useState} from "react";
 import axios from "axios";
 import UserPage from "./UserPage";
+import NavBar from "./NavBar";
 function AdminPage(){
     const [users,setUsers]=useState();
     useEffect(()=>{
@@ -23,14 +24,15 @@ function AdminPage(){
 
     return (
         <div>
+        <NavBar />
         <h1>User list:</h1>
         <ul class="list-group">
             {users?.map(user=>(
                 <li>
                 <UserPage firstName={user.firstName}
-                    lastname={user.lastName} 
+                    lastName={user.lastName} 
                     email={user.email}
-                    state={user.state}
+                    // state={user.state}
                 />
                 </li>
                
